@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resources</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>📖 Study Resources</h1>
+    <h1>📝 Contact & Registration</h1>
     <nav>
         <a href="index.html">Home</a>
         <a href="resources.html">Resources</a>
@@ -16,27 +16,32 @@
     </nav>
     
     <main>
-        <table>
-            <thead>
-                <tr>
-                    <th>Subject</th>
-                    <th>Resource</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>Mathematics</td><td>Practice Questions</td></tr>
-                <tr><td>English</td><td>Story Books</td></tr>
-                <tr><td>Science</td><td>Videos and Notes</td></tr>
-                <tr><td>Computer Studies</td><td>Programming Tutorials</td></tr>
-            </tbody>
-        </table>
-        
-        <h2>Useful Websites</h2>
-        <ul>
-            <li>W3Schools</li>
-            <li>Khan Academy</li>
-            <li>Wikipedia</li>
-        </ul>
+        <form action="#" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" placeholder="Enter your full name">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email address">
+            
+            <label>Gender:</label>
+            <div class="radio-group">
+                <input type="radio" name="g" id="male" value="Male"> <label for="male" style="display:inline; font-weight:normal; margin:0 15px 0 0;">Male</label>
+                <input type="radio" name="g" id="female" value="Female"> <label for="female" style="display:inline; font-weight:normal; margin:0;">Female</label>
+            </div>
+            
+            <label for="subject">Favourite Subject:</label>
+            <select id="subject">
+                <option>Mathematics</option>
+                <option>English</option>
+                <option>Science</option>
+                <option>Computer Studies</option>
+            </select>
+            
+            <label for="comments">Message / Feedback:</label>
+            <textarea id="comments" rows="5" placeholder="Write your text here..."></textarea>
+            
+            <input type="submit" value="Register">
+        </form>
     </main>
 
     <footer>
